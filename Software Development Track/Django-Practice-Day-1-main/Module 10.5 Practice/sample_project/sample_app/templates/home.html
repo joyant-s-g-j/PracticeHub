@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% comment %} Join Filter {% endcomment %}
+    <h3>{{name}}</h3>
+    <h3>{{ name | join:" " }}</h3>
+
+    {% comment %} Date Filter {% endcomment %}
+    <h3>{{ date | date:"SHORT_DATE_FORMAT" }}</h3>
+
+    {% comment %} Length Filter {% endcomment %}
+    <h3>{{val | length}}</h3>
+
+    {% comment %} Add Filter {% endcomment %}
+    <h3>{{ valu | add:"5"}}</h3>
+
+    {% comment %} Capfirst Filter {% endcomment %}
+    <h3>{{ nm | capfirst}}</h3>
+
+    {% comment %} Cut Filter {% endcomment %}
+    <h3>{{string | cut:" "}}</h3>
+
+    {% comment %} Dictsort Filter {% endcomment %}
+    <h3>{{ details | dictsort:"name" }}</h3>
+
+    {% comment %} Escape Filter {% endcomment %}
+    <h3>{{ es | escape}}</h3>
+
+    {% comment %} First Filter {% endcomment %}
+    <h3>{{ fruit | first}}</h3>
+
+    {% comment %} Last Filter {% endcomment %}
+    <h3>{{ fruit | last}}</h3>
+
+    {% comment %} Linenumbers Filter {% endcomment %}
+    <pre>{{ ani | linenumbers}}</pre>
+
+    {% comment %} Lower Filter {% endcomment %}
+    <h3>{{ string | lower }}</h3>
+
+    {% comment %} Upper Filter {% endcomment %}
+    <h3>{{ string | upper }}</h3>
+
+    {% comment %} Title Filter {% endcomment %}
+    <h3>{{ ttl | title }}</h3>
+
+    {% comment %} Random Filter {% endcomment %}
+    <h3>{{ name | random }}</h3>
+
+    {% comment %} Slice Filter {% endcomment %}
+    <h3>{{ name | slice:'2' }}</h3>
+
+    {% comment %} Timesince Filter {% endcomment %}
+    <h3>{{ postTime | timesince }}</h3>
+
+    {% comment %} Truncatechars Filter {% endcomment %}
+    <h3>{{ string | truncatechars:7 }}</h3>
+
+    {% comment %} Wordcount Filter {% endcomment %}
+    <h3>{{ string | wordcount }}</h3>
+
+    {% comment %} Striptags Filter {% endcomment %}
+    <h3>{{ line | striptags }}</h3>
+
+    {% comment %} Pluralize Filter {% endcomment %}
+    <h3>You have {{ msg }} message{{ msg | pluralize }}</h3>
+
+    {% comment %} Make_list Filter {% endcomment %}
+    <h3>{{ nm | make_list }}</h3>
+
+</body>
+</html>

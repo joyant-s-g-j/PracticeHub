@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+<div class="container">
+    <h3>Buy {{ car.car_name }}</h3>
+    <p>Price: ${{ car.car_price }}</p>
+    <form method="POST">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-primary">Confirm Purchase</button>
+    </form>
+</div>
+{% endblock %}

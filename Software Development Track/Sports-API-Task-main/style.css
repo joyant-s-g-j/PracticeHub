@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+*{
+    text-decoration: none;
+    color: white;
+}
+body{
+    background-image: url(./bg.jpg);
+    font-family: 'Roboto', sans-serif;
+    padding: 50px;
+    padding-top: 0;
+}
+.navigation{
+    padding: 30px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.brand-logo a{
+    font-size: 2.8rem;
+    font-family: "Dancing Script", cursive;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+}
+.navbar{
+    padding-top: 20px;
+    display: flex;
+    gap: 30px;
+    font-weight: bold;
+}
+.navbar a:hover{
+    color: rgb(32, 46, 75);
+}
+.srch-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+.srch-bar input{
+    color: black;
+    border: transparent;
+    height: 30px;
+    width: 50em;
+    border-radius: 50px;
+    padding-left: 15px;
+}
+.srch-bar button{
+    height: 33px;
+    width: 100px;
+    background-color: rgb(26, 124, 166);
+    border-radius: 50px;
+    border: 1px solid gray;
+    transition: 0.3s;
+}
+.srch-bar button:hover{
+    background-color: rgb(39, 66, 115);
+    cursor: pointer;
+    color: whitesmoke;
+}
+.comment, .no-srch{
+    padding-bottom: 50%;
+    padding-left: 35%;
+}
+.comment h1, .no-srch h2{
+    color: rgb(5, 151, 255);
+    background-color: rgb(255, 255, 255);
+    width: 400px;
+    height: auto;
+    padding: 15px;
+    border-radius: 50px;
+}
+.main-container{
+    display: flex;
+    justify-content: space-around;
+}
+.player-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 10px;
+    margin: auto;
+    text-align: center;
+    justify-content: left;
+}
+.card {
+    border: 1px solid gray;
+    border-radius: 10px;
+    background: rgb(31, 79, 109);
+    box-shadow: 0 15px 10px 0 rgb(117, 170, 190);
+    transition: 0.3s ease-in-out;
+    width: 250px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+.card-img {
+    width: auto;
+    height: auto;
+    max-width: 250px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card h3 {
+    margin-bottom: 5px;
+    color: white;
+}
+
+.first-line {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+}
+
+.line-item {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.first-line h6 {
+    margin: 0;
+    font-weight: 550;
+}
+
+.nation-one, .nation-two {
+    border: 1px solid rgb(28, 156, 216);
+    padding: 7px;
+    box-sizing: border-box;
+    width: auto;
+}
+
+.nation-one {
+    background-color: rgb(42, 81, 165);
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    text-align: left;
+    width: 100px;
+}
+
+.nation-two {
+    background-color: rgb(115, 131, 167);
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    text-align: left;
+    width: 150px;
+}
+.first-line p{
+    font-size: small;
+}
+.btn{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+.btn button{
+    color: rgb(16, 42, 58);
+    width: 100px;
+    height: 35px;
+    background-color: rgb(143, 157, 192);
+    border-radius: 50px;
+    border: transparent;
+    font-weight: 550;
+    transition: 0.3s ease-in-out;
+}
+.btn button:hover{
+    cursor: pointer;
+    background-color: rgb(16, 42, 58);
+    color: rgb(232, 234, 240);
+    transform: scale(1.03);
+}
+.group-container{
+    border: 1px solid whitesmoke;
+    margin-top: 10px;
+    width: 500px;
+    height: 120vh;
+    border-radius: 20px;
+    background-color: rgb(31, 79, 109);
+}
+.group-secondary-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px 0 10px;
+}
+.group-info{
+    margin: 5px;
+    display: flex;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px 0 rgb(117, 170, 190);
+}
+.group-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+.group-player-name{
+    width: 200px;
+    border-left: none;
+}
+.group-player-name p{
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+.group-player-name p:nth-child(1){
+    color: black;
+    padding-left: 10px;
+    font-weight: bold;
+}
+.group-player-name p:nth-child(2){
+    padding-left: 10px;
+}
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%; 
+    height: auto; 
+    background-color: rgba(0,0,0,0.4); 
+    overflow: hidden; 
+    border-radius: 10px;
+}
+
+.modal-content {
+    background-color: #0d464a;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 100%; 
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.modal-details {
+    display: flex;
+    align-items: flex-start;
+}
+
+.details-wrapper {
+    display: flex;
+    align-items: flex-start;
+}
+
+.details-wrapper img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.details-wrapper div {
+    display: flex;
+    flex-direction: column;
+}
+.player-info {
+    margin-left: 20px;
+}
+.player-info h2 {
+    margin-bottom: 10px; 
+}
+.player-info p {
+    margin: 5px 0;
+}
+.player-info strong {
+    margin-right: 5px;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.icon-grid {
+    margin-top: 10px;
+    display: flex;
+}
+.icon-grid a {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+
+

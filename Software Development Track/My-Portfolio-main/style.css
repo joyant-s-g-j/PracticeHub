@@ -1,0 +1,688 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playwrite+NG+Modern:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    cursor: url(image_3/icon-25.png), auto;
+}
+:root{
+    --bg-color: #222;
+    --second-bg-color: #1b1e1f;
+    --text-color: white;
+    --main-color: aqua;
+}
+::-webkit-scrollbar{
+    width: 0;
+}
+
+html{
+    overflow-x: hidden;
+}
+body{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Roboto', sans-serif;
+}
+::selection{
+    background-color: #df7070;
+    color: rgb(58, 10, 10);
+}
+.first-block-nav{
+    background-color: var(--bg-color);
+    padding: 50px 15px;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.6rem 5%;
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    gap: 15em;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, .2), 
+                -10px -10px 0px rgba(0, 0, 0, 0);
+}
+.logo{
+    color: white !important;
+    font-size: 30px !important;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    cursor: url(image_3/icon-0.png), pointer;
+    font-family: "Playwrite NG Modern", cursive;
+    display: flex;
+    text-decoration: none;
+}
+.logo span{
+    color: aqua;
+}
+.logo:hover{
+    transform: scale(1.2);
+}
+
+.navbar{
+    display: flex;
+    margin-left: 20px;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+    font-family: "Josefin Sans", sans-serif;
+}
+.navbar a{
+    color: #fffffff3;
+    transition: color 0.3s ease;
+    cursor: url(image_3/icon-0.png), pointer;
+    text-decoration: none;
+}
+.navbar a:hover{
+    color: aqua;
+}
+
+.nav-link.active,
+.nav-link:hover{
+    color: aqua;
+}
+.home{
+    display: inline-block;
+    margin-top: 200px;
+    margin-left: 100px;
+}
+.hello{
+    font-family: "Playwrite NG Modern", cursive;
+}
+.name{
+    font-family: "Libre Baskerville", serif;
+    font-weight: 600;
+    font-size: 45px;
+    margin: 20px 0 20px 0;
+}
+.soft-dev{
+    font-size: 40px;
+    font-weight: 700;
+}
+.text-animation{
+    color: var(--main-color);
+    
+}
+.first-block-img img{
+    width: 370px;
+    height: 370px;
+    margin-top: -40px;
+    margin-left: 80px;
+    border-radius: 50%;
+    cursor: url(image_3/icon-0.png), pointer;
+    border: 5px solid aqua;
+    box-shadow: 0 0 5px aqua,
+                0 0 20px aqua,
+                0 0 40px aqua;
+}
+.first-block-img img:hover{
+    box-shadow: 0 0 5px aqua,
+                0 0 20px aqua,
+                0 0 40px aqua,
+                0 0 80px aqua,
+                0 0 100px aqua;
+}
+.icon-grid{
+    margin-left: 70px;
+}
+.icon-grid a{
+    margin-top: 10px;
+    display: inline-flex;
+    font-size: 1.5em;
+    color: aqua;
+    border: 2px solid aqua;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: url(image_3/icon-0.png), pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    margin: 10px 10px;
+}
+.icon-grid a:hover{
+    background-color: aqua;
+    color: black;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 25px aqua;
+    cursor: url(image_3/icon-0.png), pointer;
+}
+.icon-grid i{
+    gap: 20px;
+}
+.resume{
+    border: 2px solid aqua;
+    border-radius: 10px;
+    font-size: 0.9em;
+    transition: all 0.3s ease;
+    margin-left: 100px;
+    margin-top: 20px;
+    padding: 12px;
+    cursor: url(image_3/icon-0.png), pointer;
+    background-color: aqua;
+    color: black;
+    font-weight: 602;
+}
+.resume a{
+    text-decoration: none;
+    color: inherit;
+    cursor: url(image_3/icon-0.png), pointer;
+    transition: all 0.3s ease;
+}
+.resume a:hover{
+    color: var(--main-color);
+}
+.resume:hover{
+    cursor: url(image_3/icon-0.png), pointer;
+    box-shadow: 0 0 25px aqua;
+    background-color: transparent;
+    border: 1px solid;
+    color: aqua;
+    transition: all 0.3s ease;
+}
+.second-block-content{
+    background: var(--second-bg-color);
+    background-size: cover;
+    display: flex;
+    padding: 100px 50px;
+    justify-content: space-between;
+}
+
+.img-2nd{
+    margin-top: 80px;
+    margin-left: 50px;
+    border-radius: 50%;
+    width: 370px;
+    height: 370px;
+    cursor: url(image_3/icon-0.png), pointer;
+    border: 5px solid aqua;
+    box-shadow: 0 0 5px aqua,
+                0 0 20px aqua,
+                0 0 40px aqua;
+}
+
+.img-2nd:hover{
+    box-shadow: 0 0 5px aqua,
+                0 0 20px aqua,
+                0 0 40px aqua,
+                0 0 80px aqua,
+                0 0 100px aqua;
+}
+.about-me{
+    margin-top: 80px;
+}
+.about-me h3{
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--main-color);
+    cursor: url(image_3/icon-0.png), pointer;
+}
+.about-me p{
+    font-size: 18px;
+    color: var(--text-color);
+    cursor: url(image_3/icon-0.png), pointer;
+    font-family: "Playwrite NG Modern", cursive;
+    line-height: 2;
+}
+.explorer{
+    color: aqua;
+}
+.signature{
+    font-family: "Great Vibes", cursive;
+    font-size: 40px;
+    text-align: right;
+    display: block;
+    color: var(--main-color);
+}
+.third-block-content{
+    background: var(--bg-color);
+    padding: 100px 15px;
+}
+.edu{
+    font-size: 3.4em;
+    color: var(--main-color);
+    justify-items: center;
+    text-align: center;
+    margin-bottom: 5rem;
+    cursor: url(image_3/icon-0.png), pointer;
+}
+.edu-items{
+    max-width: 950px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+}
+.edu-item {
+    position: relative;
+    padding: 0 0; 
+    box-sizing: border-box;
+    margin-bottom: 40px;
+}
+.edu-items::before{
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    background-color: var(--main-color);
+    content: calc(50%, -1px);
+}
+
+.edu-item:nth-child(1){
+    padding-right: calc(52%);
+    text-align: right;
+    
+}
+.edu-item:nth-child(2){
+    padding-left: calc(43%);
+    text-align: left;
+}
+.edu-item:nth-child(3){
+    padding-right: calc(41%);
+    text-align: right;
+}
+.edu-item:nth-child(4){
+    padding-left: calc(43%);
+    text-align: left;
+}
+.edu-item:last-child{
+    padding-right: calc(33.5%);
+    text-align: right;
+}
+
+.edu-dot {
+    width: 15px;
+    height: 15px;
+    background-color: var(--main-color);
+    box-shadow: 0 0 25px var(--main-color), 
+                0 0 50px var(--main-color);
+    position: absolute;
+    left: 49.2%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    top: 40%;
+    transform: translateY(-50%);
+}
+
+.edu-date{
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    margin: 0 0 15px;
+}
+.edu-date:nth-child(odd){
+    text-align: right;
+}
+.edu-content{
+    background-color: var(--bg-color);
+    border: 3px solid var(--main-color);
+    padding: 20px 30px;
+    border-radius: 2rem;
+    box-shadow: 0 0 10px var(--main-color);
+    cursor: url(image_3/icon-0.png), pointer;
+    transition: 0.3s ease-in-out;
+}
+.edu-content:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 25px var(--main-color);
+    cursor: url(image_3/icon-0.png), pointer;
+}
+.edu-content h3{
+    font-size: 20px;
+    color: var(--main-color);
+    margin: 0 0 10px;
+    font-weight: 500;
+    cursor: url(image_3/icon-0.png), pointer;
+}
+.edu-content p{
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    cursor: url(image_3/icon-0.png), pointer;
+}
+.forth-block-content{
+    background-color: var(--second-bg-color);
+    padding: 100px 15px;
+    
+}
+.head-skill{
+    color: var(--main-color);
+    padding-top: 40px;
+    justify-content: center;
+    text-align: center;
+    font-size: 3.4em;
+}
+.graph{
+    margin: 80px;
+}
+.nodes{
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+}
+.node{
+    position: relative;
+    padding: 0 0;
+    box-sizing: border-box;
+    margin-bottom: 100px;
+    color: var(--text-color);
+    display: flex;
+    gap: 20px;
+}
+.node:nth-child(1){
+    padding-right: calc(60%);
+    text-align: right;
+}
+.node:nth-child(2){
+    padding-left: calc(60%);
+    text-align: left;
+}
+.node:nth-child(3){
+    padding-right: calc(60%);
+    text-align: right;
+}
+.node:nth-child(4){
+    padding-left: calc(62%);
+    text-align: left;
+}
+.node:nth-child(5){
+    padding-right: calc(60%);
+    text-align: right;
+}
+.node:nth-child(6){
+    padding-left: calc(62%);
+    text-align: left;
+}
+.node:nth-last-child(){
+    padding-right: calc(30%);
+    text-align: right;
+}
+
+.nodes img{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border: 2px solid var(--main-color);
+    cursor: url(image_3/icon-0.png), pointer;
+    box-shadow: 0 0 25px var(--main-color);
+    animation: appear 1s forwards, move 5s infinite linear;
+}
+
+@keyframes appear{
+    to{
+        opacity: 1;
+    }
+}
+@keyframes move{
+    0%{
+        transform: translate(0, 0);
+    }
+    25%{
+        transform: translate(5px, 5px);
+    }
+    50%{
+        transform: translate(0, 0);
+    }
+    75%{
+        transform: translate(-5px, -5px);
+    }
+    100%{
+        transform: translate(0, 0);
+    }
+}
+.node img:hover{
+    box-shadow: 0 0 25px var(--main-color),
+                0 0 50px var(--main-color);
+    transition: all .5s ease-in-out;
+    cursor: url(image_3/icon-0.png), pointer;
+}
+.works{
+    background-color: var(--bg-color);
+    padding: 100px 15px;
+}
+.head-work{
+    color: var(--main-color);
+    padding-top: 40px;
+    justify-content: center;
+    text-align: center;
+    font-size: 3.5em;
+    margin-bottom: 50px;
+}
+
+.work-one{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    border-radius: 20px;
+    margin-bottom: 70px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 1.5), 
+                -10px -10px 0px rgba(0, 0, 0, 0);
+    animation: appear 1s forwards, move 5s infinite linear;
+}
+.carousel{
+    width: 50%;
+    height: 18em;
+    margin-right: 30px;
+}
+.work-one .carousel-img {
+    width: 30rem;
+    height: 18em;
+    border-radius: 30px;
+    margin-right: 10px;
+}
+.txt-one{
+    border: 1px dashed var(--main-color);
+    padding: 40px;
+    padding-bottom: 0;
+    border-radius: 20px;
+}
+.txt-one h3{
+    color: var(--main-color);
+}
+.icon-grid-2 a{
+    display: inline-flex;
+    font-size: 1.5em;
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
+    border-radius: 50%;
+    padding: 7px 5px 5px 5px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    pointer-events: none;
+    margin-right: 10px;
+}
+
+.work-two{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    padding-right: 0;
+    margin-right: 40px;
+    margin-left: 40px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 1.5), 
+                -10px -10px 0px rgba(0, 0, 0, 0);
+    animation: appear 1s forwards, move 5s infinite linear;
+    
+}
+.work-two .carousel-img {
+    width: 30rem;
+    height: 18em;
+    border-radius: 30px;
+    margin-left: 0;
+}
+.txt-two{
+    border: 1px dashed var(--main-color);
+    padding: 40px;
+    margin-right: 40px;
+    border-radius: 20px; 
+    padding-bottom: 0;   
+}
+.txt-two h3{
+    color: var(--main-color);
+}
+.work-three{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    border-radius: 20px;
+    margin-top: 70px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 1.5), 
+                -10px -10px 0px rgba(0, 0, 0, 0);
+    animation: appear 1s forwards, move 5s infinite linear;
+}
+.work-three .carousel-img {
+    width: 30rem;
+    height: 18em;
+    border-radius: 30px;
+    margin-right: 10px;
+}
+.txt-three{
+    border: 1px dashed var(--main-color);
+    padding: 40px;
+    padding-bottom: 0;
+    border-radius: 20px;
+}
+.txt-three h3{
+    color: var(--main-color);
+}
+#contact{
+    background-color: var(--second-bg-color);
+    padding: 100px;
+    padding-bottom: 50px;
+}
+.contact{
+    background-color: var(--second-bg-color);
+}
+.contact h1{
+    color: var(--main-color);
+    padding-top: 40px;
+    justify-content: center;
+    text-align: left;
+}
+.lst-txt{
+    font-size: 1.5em;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    font-family: "Playwrite NG Modern", cursive;
+    line-height: 2;
+}
+.icon-grid-3 a{
+    margin-top: 10px;
+    display: inline-flex;
+    font-size: 1.5em;
+    color: aqua;
+    border: 2px solid aqua;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: url(image_3/icon-0.png), pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    margin: 10px 10px;
+}
+.icon-grid-3 a:hover{
+    cursor: url(image_3/icon-0.png), pointer;
+    background-color: aqua;
+    color: black;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 25px var(--main-color);
+}
+.forms{
+    padding: 50px;
+    margin-top: 20px;
+    margin-left: 7em;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 1.5), 
+                -10px -10px 0px rgba(0, 0, 0, 0);
+}
+.forms h2{
+    margin: 0 0 30px;
+    padding: 0;
+    color: var(--text-color);
+    text-align: center;
+}
+.forms .user-box{
+    position: relative;
+}
+
+.forms .user-box input{
+    width: 20em;
+    padding: 10px 0;
+    font-size: 16px;
+    color: aqua;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid var(--main-color);
+    outline: none;
+    background-color: transparent;
+    cursor: url(image_3/icon-0.png), pointer;
+    transition: all 0.3s ease;
+}
+
+.forms .user-box label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: aqua;
+    cursor: url(image_3/icon-0.png), pointer;
+    pointer-events: none;
+    transition: .5s;
+}
+.forms .user-box input:focus ~ label,
+.forms .user-box input:valid ~ label{
+    top: -20px;
+    left: 0;
+    color: var(--main-color);
+    font-size: 12px;
+}
+.btn-snd{
+    border: 2px solid var(--main-color);
+    border-radius: 10px;
+    font-size: 0.9em;
+    margin-left: 90px;
+    padding: 12px;
+    color: var(--bg-color);
+    font-weight: 600;
+    text-decoration: none;
+    background-color: aqua;
+    cursor: url(image_3/icon-0.png), pointer;
+}
+.btn-snd:hover{
+    color: var(--main-color);
+    background-color: transparent;
+    border: 1px solid;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 25px var(--main-color);
+    cursor: url(image_3/icon-0.png), pointer;
+}
+.foot{
+    background-color: var(--bg-color);
+    padding: 35px;
+}
+.foot h6{
+    color: var(--main-color);
+    text-align: center;
+    font-size: small;
+    font-weight: 400;
+}

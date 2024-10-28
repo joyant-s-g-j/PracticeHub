@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <nav class="navigation">
+        <div class="brand-logo">
+            <a href="#">PhiSport</a>
+        </div>
+        <div class="navbar">
+            <a class="active" href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Recipe</a>
+            <a href="#">Blog</a>
+        </div>
+    </nav>
+    <div class="srch-bar">
+        <input id="srch-box" type="text" placeholder="Search player name...">
+        <button type="submit" id="srch">Search</button>
+    </div>
+    <div class="main-container">
+        <div id="player-container" class="player-container">
+
+        </div>
+        <div class="group-container">
+            <div class="group-secondary-container">
+                <h5>Selected Player List</h5>
+                <h5 id="count">0</h5>
+            </div>
+            <hr>
+            <div id="group-main-container" class="cart-main-container">
+
+            </div>
+        </div>
+        <!-- Modal Structure -->
+        <div id="playerModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div id="modal-details" class="modal-details">
+                    <div class="details-wrapper">
+                        <img id="playerImage" alt="Player Image">
+                        <div id="playerInfo" class="player-info">
+                            <h2 id="playerName"></h2>
+                            <p><strong>Nationality:</strong> <span id="playerNationality"></span></p>
+                            <p><strong>Gender</strong> <span id="playerGender"></span></p>
+                            <p><strong>Date of Birth:</strong> <span id="playerBirth"></span></p>
+                            <p><strong>Team:</strong> <span id="playerTeam"></span></p>
+                            <p><strong>Sport:</strong> <span id="playerSport"></span></p>
+                            <p id="playerDescription"></p>
+                            <div class="icon-grid">
+                                <a href="#" id="twitterLink" target="_blank" style="display: none;">
+                                    <i class='bx bxl-twitter'></i>
+                                </a>
+                                <a href="#" id="instagramLink" target="_blank" style="display: none;">
+                                    <i class='bx bxl-instagram'></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

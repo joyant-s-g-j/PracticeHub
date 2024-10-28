@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<div class="d-flex justify-content-center px-5 pt-3 align-items-center">
+    <div class="col-6">
+        <h1>Welcome to CarMart</h1>
+        <p style="font-size: 1.2rem">your one-stop destination for buying and selling cars! We offer an extensive selection of top-quality vehicles from leading brands like BMW, Tesla, Toyota, Hyundai, and Mercedes-Benz. Our user-friendly website makes it easy to browse detailed listings, complete with high-resolution images and specifications. Whether you are looking for a sleek sedan or a versatile SUV, we have the perfect car to fit your lifestyle. Plus, our dedicated team is here to provide expert guidance and support throughout your buying journey. Start exploring our inventory today and find your dream car with us!</p>
+    </div>
+    <div class="col-6">
+        <img src="{% static "header.png" %}" class="resized-image" style="max-width: 100%; height: auto;">
+    </div>
+</div>
+
+<div class="d-flex justify-content-center p-2">
+    <div class="bg-white p-3">
+        <h3 class="text-center">All Brands</h3>
+        <div class="form-group">
+            {% for b in brands %}
+            <div class="form-check form-check-inline">
+                <label class="form-check-label" for="{{b.id}}" style="font-size: 1.5rem;">
+                    <a href="{% url 'brands_wise_cars' b.slug %}" class="text-decoration-none text-dark"> {{ b.name }} || </a>
+                </label>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+<div class="col-12">
+    <div class="d-flex flex-wrap px-5">
+      {% for car in data %}
+      <div class="col-sm-4">
+        <div class="card mx-2">
+          <div class="card-body">
+              <img class="card-img-top" src="{{car.image.url}}" alt="Card image cap">
+              <br>
+              <br>
+              <h5 class="card-title text-decoration-none text-dark">Name: {{car.car_name}}</h5>
+              <h5>Price: {{car.car_price}}$</h5>
+              <h5>Brand: {{car.brand.name}}</h5>
+              <h5><a class="text-decoration-none text-dark" href="{% url "detail_car" car.id %}">View Details</a></h5>
+              {% if user.is_superuser %}
+              <a class="btn btn-warning my-1" href="{% url "edit_car" car.id %}">Edit</a>
+              <a class="btn btn-danger my-1" href="{% url "delete_car" car.id %}">Delete</a>
+              {% endif %}
+              </p>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+<br>
+{% endblock  %}

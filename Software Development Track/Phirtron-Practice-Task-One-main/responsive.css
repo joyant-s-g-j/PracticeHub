@@ -1,0 +1,94 @@
+@media only screen and (min-width: 320px) and (max-width: 829px) {
+    body, html{
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    .banner{
+        background-image: url(image/bnrbg.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .navbar{
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    .logo{
+        margin-bottom: 20px;
+        margin-left: 0;
+    }
+    .menu ul{
+        flex-direction: column;
+        gap: 15px;
+    }
+    .landing{
+        flex-direction: column;
+        
+        margin: 0;
+    }
+    .land-info{
+        margin-bottom: 30px;
+    }
+    .police{
+        width: 200px;
+        height: 100%;
+    }
+    .icon{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .icon img{
+        height: 100px;
+        width: 100px;
+    }
+    .hire{
+        flex-direction: column;
+        align-items: center;
+    }
+    .police-pic img{
+        height: 100%;
+        width: 250px;
+        align-items: center;
+    }
+    .call{
+        align-items: center;
+        margin-right: 20px;
+        padding: 20px;
+    }
+}
+@media only screen and (min-width: 320px) and (max-width: 375px){
+    .land-info .btn{
+        margin-right: 80px;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 829px) {
+    .banner{
+        align-items: center;
+    }
+    .icon{
+        flex-direction: row;
+        gap: 50px;
+    }
+    .footer-container{
+        flex-direction: row;
+        align-items: center;
+    }
+}
+@media only screen and (min-width: 830px) and (max-width: 1024px) {
+    .hire {
+        flex-direction: row;
+        display: flex;
+        padding-right: 20px;
+        gap: 0;
+    }
+    .icon{
+        gap: 50px;
+    }
+    .police-pic img{
+        height: 100%;
+        width: 270px;
+    }
+}

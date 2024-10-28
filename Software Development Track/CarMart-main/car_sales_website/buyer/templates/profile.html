@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+<div>
+    <br>
+    <a class="btn btn-primary" href="{% url "edit_profile" %}">Edit your profile</a>
+    {% if messages %}
+    <div class="container">
+        {% for message in messages %}
+            <div class="alert alert-{{ message.tags }}">
+                {{ message }}
+            </div>
+        {% endfor %}
+    </div>
+    {% endif %}
+    <h2 class="ml-5 my-4">Your Order History</h2>
+    <div class="d-flex flex-wrap px-5">
+        {% if orders %}
+            {% for order in orders %}
+            <div class="col-sm-4">
+                <div class="card mx-2">
+                    <div class="card-body">
+                        <img class="card-img-top" src="{{order.car.image.url}}" alt="Card image cap">
+                        <p class="card-text my-2">
+                            <strong>Car:</strong> {{ order.car.car_name }} <br>
+                            <strong>Brand:</strong> {{order.car.brand.name}} <br>
+                            <strong>Price:</strong> {{ order.car.car_price }}$ <br>
+                            <strong>Ordered on:</strong> {{ order.created_at|date:"F j, Y, g:i a" }} <br>
+                        </p>
+                        <a href="{% url "detail_car" order.id %}" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        {% else %}
+            <div class="col-12">
+                <p>No orders found. Start shopping to view your order history!</p>
+            </div>
+        {% endif %}
+    </div>
+</div>
+{% endblock  %}

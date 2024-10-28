@@ -1,0 +1,159 @@
+/* <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">  */
+
+@media only screen and (min-width: 320px) and (max-width: 830px) {
+  body, html{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  .container-fluid {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: left;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  .navbar-brand {
+    text-align: center;
+    margin: auto;
+  }
+  .search-btn {
+    display: inherit;
+  }
+  .arrows{
+    top: 60%;
+    right: 80%;
+  }
+  .cards{
+    display: block;
+  }
+  .card-two .card{
+    margin: 0;
+  }
+  .card-two .card img{
+    width: 325px;
+    height: 325px;
+    
+  }
+  .card-two .card-title{
+    font-size: 2em;
+  }
+  .card-two .card-text{
+    line-height: 1rem;
+    font-size: 1em;
+    margin-bottom: 10px;
+  }
+  .card-two a.btn{
+    width: 50%;
+    height: 30px;
+    padding: 0;
+  }
+  #card-three img{
+    width: 50%;
+    height: 450px;
+    margin: 10 auto;
+    object-fit: cover;
+
+  }
+  .product-card {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    padding: 0;
+    margin: auto;
+    justify-content: center;
+  }
+  .product-image {
+    width: 100px;
+    height: 100px;
+  }
+  .question-img img {
+    width: 100%;
+  }
+  .bx{
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  .lft-bx {
+    flex-direction: column;
+    width: 300px;
+    margin-left: 60px;
+  }
+  footer{
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 830px){
+  .card-two {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card-two .card {
+    width: 100%;
+    max-width: 325px;
+}
+
+#card-three .card-img-top {
+    width: 100%;
+    height: auto;
+}
+}
+@media only screen and (min-width: 831px) and (max-width: 1024px){
+  body, html{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  .product-card {
+    flex-wrap: wrap;
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    margin-right: auto;
+    align-items: stretch;
+    justify-content: flex-start;
+  }
+  .own-card {
+    width: 48%;
+    display: flex;
+  }
+  .product-image{
+    width: 100px;
+    height: 100px;
+
+  }
+  .qns {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 100px;
+  }
+  .question-img {
+      flex: 1;
+      max-width: 45%;
+  }
+  .qns > div:not(.question-img) {
+      flex: 1;
+      max-width: 55%;
+  }
+  #exampleInputName {
+    width: 99%;
+  }
+  #exampleInputEmail1{
+    width: 99%;
+  }
+}

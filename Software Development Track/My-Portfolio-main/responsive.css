@@ -1,0 +1,121 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+@media (max-width: 1024px) {
+    .header{
+        gap: 2em !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+    .navbar {
+        gap: 0 !important;
+    }
+    .home {
+        margin-right: 30px;
+    }
+    .first-block-content {
+        margin-top: 100px;
+    }
+    .first-block-img {
+        margin-top: 50px;
+    }
+    .name, .soft-dev {
+        font-size: 2em !important;
+    }
+    .about-me p{
+        font-size: .9rem !important;
+    }
+}
+
+@media (max-width: 768px){
+    .header {
+        height: 7em;
+        display: flex;
+        flex-direction: column;
+        gap: 2em !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+    .logo {
+        font-size: small;
+    }
+    .navbar {
+        display: none !important;
+    }
+    .home {
+        margin-top: 170px !important;
+        margin-left: 30px !important;
+        margin-right: 30px !important;
+    }
+    .first-block-2nd {
+        flex-direction: column !important;
+        margin-left: 10em;
+    }
+    .first-block-content {
+        margin-left: 0.5em;
+        margin-right: 0.8em;
+        width: 100%;
+        max-width: 900px;
+    }
+    .first-block-img {
+        order: -1;
+    }
+    .circle-img {
+        width: 200px !important;
+        height: 200px !important;
+        padding: 0;
+    }
+    .hello, .name, .soft-dev {
+        font-size: 1.3em !important;
+        margin-left: 30px !important;
+    }
+    .second-block-content{
+        padding: 0 !important;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center !important;
+        gap: 40px !important;
+    }
+    .img-2nd{
+        order: -1;
+        margin-top: 2em !important;
+        margin-left: 2em !important;
+        margin-bottom: 5px !important;
+        width: 200px !important;
+        height: 200px !important;
+    }
+    .about-me{
+        margin: 10px !important;
+    }
+    .about-me h3{
+        font-size: 2em !important;
+    }
+    .about-me p{
+        font-size: .8em !important;
+    }
+    .edu-item:nth-child(2){
+        padding-left: calc(52%) !important;
+    }
+    .edu-item:nth-child(3){
+        padding-right: calc(52%) !important;
+    }
+    .edu-item:nth-child(4){
+        padding-left: calc(52%) !important;
+    }
+    .edu-item:nth-child(5){
+        padding-right: calc(43%) !important;
+    }
+    .txt-one, .txt-two, .txt-three h3{
+        font-size: 10px;
+    }
+    #contact{
+        flex-direction: column;
+    }
+}
+

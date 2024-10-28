@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+<form method="post" style="width: 50%; margin: auto">
+    <h1>Delete musician page</h1>
+    {% csrf_token %}
+    <button type="submit" class="btn btn-danger">Delete</button>
+    <a href="{% url 'basepage' %}" class="btn btn-secondary">Cancel</a>
+</form>
+{% endblock  %}

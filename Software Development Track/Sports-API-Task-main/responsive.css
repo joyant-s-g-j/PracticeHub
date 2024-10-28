@@ -1,0 +1,158 @@
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+.brand-logo a {
+    font-size: 2rem;
+}
+.navbar {
+    flex-direction: row;
+}
+.navbar a {
+    margin-bottom: 0;
+}
+.srch-bar {
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+.srch-bar input {
+    width: 300px;
+    max-width: 100%;
+}
+.main-container {
+    flex-direction: row;
+    justify-content: space-around;
+}
+.card {
+    max-width: 250px;
+}
+.group-container {
+    width: 500px;
+    height: auto;
+}
+.modal {
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+}
+.modal-content {
+    padding: 20px;
+}
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+.brand-logo a {
+    font-size: 1.8rem;
+}
+.navbar a {
+    font-size: 1rem;
+}
+.srch-bar input {
+    height: 30px;
+    width: 250px;
+}
+.comment, .no-srch{
+    padding-bottom: 50%;
+    padding-left: 0;
+}
+.card {
+    max-width: 200px;
+}
+.card-img{
+    width: 200px;
+}
+.group-container {
+    width: 450px;
+    height: auto;
+}
+.modal {
+    width: 70%;
+    max-width: none;
+    height: 50%;
+}
+.modal-content {
+    padding: 5px;
+}
+.player-info p {
+    font-size: xx-small;
+}
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+.brand-logo a {
+    font-size: 1.6rem;
+}
+.navbar {
+    padding: 5px;
+}
+.navbar a {
+    font-size: 0.8rem;
+}
+.srch-bar input {
+    height: 25px;
+    width: 200px;
+}
+.card {
+    max-width: 150px;
+}
+.group-container {
+    width: 400px;
+    height: auto;
+}
+.modal {
+    width: 100%;
+    max-width: none;
+}
+.modal-content {
+    padding: 15px;
+}
+}
+
+@media screen and (max-width: 575px) {
+.brand-logo a {
+    font-size: 1.4rem;
+}
+.navbar {
+    padding: 5px;
+}
+.navbar a {
+    font-size: 0.7rem;
+}
+.srch-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+.srch-bar input {
+    height: 20px;
+    width: 100%;
+    max-width: none;
+}
+.comment, .no-srch{
+    padding-bottom: 1000%;
+    padding-left: 0;
+}
+.comment h1, .no-srch h2{
+    color: rgb(5, 151, 255);
+    background-color: rgb(255, 255, 255);
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: small;
+}
+.card {
+    max-width: 100%;
+}
+.group-container {
+    width: 90%;
+}
+.modal {
+    width: 70%;
+    max-width: none;
+    height: 50%;
+}
+.modal-content {
+    padding: 10px;
+}
+.player-info p {
+    font-size: xx-small;
+}
+}
