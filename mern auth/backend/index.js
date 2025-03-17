@@ -2,18 +2,22 @@ import express from "express"
 import dotenv from "dotenv"
 import { connectDB } from "./db/connectDB.js";
 
-dotenv.config();
+import authRoutes from "./routes/auth.route.js"
+
+dotenv.config(); // for solving crashed
+
+const PORT = process.env.PORT || 5001
 
 const app = express();
 
-app.get("/", (req, res) => {
-    res.send("Hello World 123");
-})
+// app.get("/", (req, res) => {
+//     res.send("Hello World 123");
+// }) for testing
 
-app.listen(3000, () => {
+app.use("/api/auth", authRoutes);
+
+app.listen(PORT, () => {
     connectDB();
-    console.log("Server is running on port 3000")
+    console.log("Server is running on port: " + PORT)
 })
 
-// N6FBtDrLMFiB3d8n
-// mongodb+srv://joyantsheikharguptajoy:N6FBtDrLMFiB3d8n@cluster0.nlf4l.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
