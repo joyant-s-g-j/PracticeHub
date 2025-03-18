@@ -6,9 +6,11 @@ import authRoutes from "./routes/auth.route.js"
 
 dotenv.config(); // for solving crashed
 
-const PORT = process.env.PORT || 5001
 
 const app = express();
+const PORT = process.env.PORT || 5001
+
+app.use(express.json()); //allows us to parse incoming requests:req.body
 
 // app.get("/", (req, res) => {
 //     res.send("Hello World 123");
