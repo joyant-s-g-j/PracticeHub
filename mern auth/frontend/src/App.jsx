@@ -6,6 +6,8 @@ import EmailVerificationPage from "./pages/EmailVerificationPage"
 import {Toaster} from "react-hot-toast"
 import { useAuthStore } from "./store/authStore"
 import { useEffect } from "react"
+import DashboardPage from "./pages/DashboardPage"
+import LoadingSpinner from "./components/LoadingSpinner"
 
 //protect routes that require authentication
 const ProtectedRoute = ({children}) => {
@@ -35,8 +37,8 @@ function App() {
   useEffect(() => {
     checkAuth()
   },[checkAuth]);
-  console.log("isAuthenticated", isAuthenticated);
-  console.log("user", user);
+
+  if (isCheckingAuth) return <LoadingSpinner />
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-green-900 to-emerald-900 flex items-center justify-center relative overflow-hidden">
       <FloatingShape color="bg-green-500" size="w-64 h-64" top="5%" left="15%" delay={0} />
@@ -44,7 +46,11 @@ function App() {
       <FloatingShape color="bg-lime-500" size="w-32 h-32" top="35%" left="5%" delay={2} />
 
       <Routes>
-        <Route path="/" element={"Home"}/>
+        <Route path="/" element={
+          <ProtectedRoute>
+            <DashboardPage />
+          </ProtectedRoute>
+        }/>
         <Route path="/signup" element={
           <RedirectAuthenticatedUser>
             <SignupPage/>
