@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import {motion} from "framer-motion"
-import Input from '../components/input'
+import Input from '../components/Input'
 import { Loader, Lock, Mail } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { useAuthStore } from '../store/authStore'
