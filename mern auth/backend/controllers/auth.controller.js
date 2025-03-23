@@ -140,11 +140,11 @@ export const resetPassword = async (req, res) => {
         const user = await User.findOne({
             resetPasswordToken: token,
             resetPasswordExpiresAt: {$gt: Date.now()},
-        })
+        });
         if(!user) {
             return res.status(400).json({success: false, message: "Invalid or expired reset token"})
         }
-        const  hashedPassword = await bcrypt.hash(password, 10);
+        const hashedPassword = await bcrypt.hash(password, 10);
         user.password = hashedPassword
         user.resetPasswordToken = undefined
         user.resetPasswordExpiresAt = undefined
