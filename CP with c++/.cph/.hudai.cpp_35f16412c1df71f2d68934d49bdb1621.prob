@@ -1,0 +1,1 @@
+{"name":"Local: hudai","url":"c:\\Users\\JOYAN\\Documents\\C and CPP\\CP with c++\\hudai.cpp","tests":[{"id":1736540110375,"input":"5\n10 20 30 40 50\n3\n60 70 80","output":"10 20 30 40 50 60 70 80"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\JOYAN\\Documents\\C and CPP\\CP with c++\\hudai.cpp","group":"local","local":true}
